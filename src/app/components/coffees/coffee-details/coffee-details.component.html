@@ -1,0 +1,46 @@
+<div class="main-dialog-container">
+  <div class="heading-section">
+    <div class="heading-title"> Coffee Details </div>
+    <button mat-icon-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <mat-dialog-content>
+    <div class="form-container">
+      <form [formGroup]="coffeeForm">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label> Blend Name </mat-label>
+          <input type="text" formControlName="blendNameCtrl" matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label> Variety </mat-label>
+          <input type="text" formControlName="varietyCtrl" matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label> Intensifier </mat-label>
+          <input type="text" formControlName="intensifierCtrl" matInput  />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label> Origin </mat-label>
+          <textarea matInput formControlName="originCtrl" rows="2" cols="40" placeholder="Notes" style="resize: none;"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label> Notes </mat-label>
+          <textarea matInput formControlName="notesCtrl" rows="2" cols="40" placeholder="Notes" style="resize: none;"></textarea>
+        </mat-form-field>
+      </form>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="center">
+    <button mat-fab extended color="primary" mat-dialog-close>
+      <mat-icon>close</mat-icon>
+      Close
+    </button>
+  </mat-dialog-actions>
+</div>

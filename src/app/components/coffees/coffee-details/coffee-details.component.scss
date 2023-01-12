@@ -1,0 +1,36 @@
+.main-dialog-container {
+  width: 400px;
+  height: 5  00px;
+  display: flex;
+  flex-direction: column;
+
+  .heading-section {
+    display: inline-flex; 
+    justify-content: space-between; 
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .heading-title {
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.full-width{
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .main-dialog-container {
+    width: 300px;
+  }
+}

@@ -1,0 +1,98 @@
+.main-container {
+  display: flex; 
+  flex-direction: column; 
+  width: 100%;
+  align-items: center;
+}
+
+.table-container {
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.note-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.note-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+// lets add last child bottom border
+.mdc-data-table__row:last-child .mdc-data-table__cell  {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 960px) {
+  .mat-mdc-table {
+    border: 0;
+    vertical-align: middle
+
+    caption {
+      font-size: 1em;
+    }
+    
+    .mat-mdc-row {
+      border-bottom: 5px solid #ddd;
+      display: block;
+    }
+  
+    .mat-mdc-cell {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 1em;
+      text-align: right;
+      font-weight: bold;
+      height:30px;
+      margin-bottom: 4%;
+    }
+  
+    .mat-mdc-cell:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: normal;
+      font-size: .85em;
+    }
+  
+    .mat-mdc-cell:last-child {
+      border-bottom: 0;
+    }
+  
+    .mat-mdc-cell:first-child {
+      margin-top: 4%;
+    }
+  }
+
+  mat-cell:first-of-type {
+    padding-left: 16px;
+  }
+
+  mat-cell:last-of-type {
+    padding-right: 16px;
+  }
+
+  .table-container {
+    width: 90%;
+  }
+  
+}
+
+button.operation-buttons {
+  background: #F5F5F5;
+}
+
+button.operation-buttons:hover {
+  background: darkgrey;
+}
+
+.operations-cell {
+  display: flex;
+  justify-content: flex-end;
+}
