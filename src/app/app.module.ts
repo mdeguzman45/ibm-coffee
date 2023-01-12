@@ -17,13 +17,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule} from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CoffeeListComponent,
-    CoffeeDetailsComponent
+    CoffeeDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
